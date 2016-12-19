@@ -1,16 +1,3 @@
-import org.eclipse.jetty.websocket.api.Session;
-import org.json.JSONObject;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
-import static j2html.TagCreator.*;
-import static spark.Spark.init;
-import static spark.Spark.staticFileLocation;
-import static spark.Spark.webSocket;
-
 public class Chat {
 
     // this map is shared between sessions and threads, so it needs to be thread-safe (http://stackoverflow.com/a/2688817)
